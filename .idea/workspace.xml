@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/NeuralNetworks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/PolLettDB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/creation_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/example_01_load_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/pol_lett_db.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/pol_lett_db_labels.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolLettDB/read_xcf_and_convert_to_png.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_layer_network/AugmentationTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_layer_network/ImageDataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_layer_network/SingleLayer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_layer_network/SingleLayerNN.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2lvQlZq9Lu3DmoIqS7arT314qQo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.AugmentationTest.executor": "Debug",
+    "Python.DataImport.executor": "Run",
+    "Python.MultiLayerFromChat.executor": "Run",
+    "Python.SVM.executor": "Run",
+    "Python.SingleLayer (1).executor": "Run",
+    "Python.SingleLayer.executor": "Run",
+    "Python.SingleLayerFromChat.executor": "Run",
+    "Python.SingleLayerOther.executor": "Run",
+    "Python.example_01_load_db.executor": "Debug",
+    "Python.lol.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/sekwo/OneDrive/Pulpit/NeuralNetworks",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks" />
+      <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks\PyTorch\single_layer_network" />
+      <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks\Old" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.SingleLayer">
+    <configuration name="AugmentationTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetworks" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/single_layer_network/AugmentationTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SingleLayer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetworks" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/single_layer_network/SingleLayer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.AugmentationTest" />
+      <item itemvalue="Python.SingleLayer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.SingleLayer" />
+        <item itemvalue="Python.AugmentationTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="" />
+      <created>1726058222742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726058222742</updated>
+      <workItem from="1726058225749" duration="7268000" />
+      <workItem from="1726072414122" duration="513000" />
+      <workItem from="1726072940279" duration="560000" />
+      <workItem from="1726073520161" duration="299000" />
+      <workItem from="1726073829782" duration="18030000" />
+      <workItem from="1727456095583" duration="5862000" />
+      <workItem from="1728817567246" duration="162000" />
+      <workItem from="1736011190005" duration="1580000" />
+      <workItem from="1736018298682" duration="2289000" />
+      <workItem from="1736698303107" duration="35000" />
+      <workItem from="1737902860155" duration="1176000" />
+      <workItem from="1737905384311" duration="15132000" />
+      <workItem from="1739214555188" duration="13474000" />
+      <workItem from="1739716609544" duration="11848000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PolLettDB/example_01_load_db.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/single_layer_network/AugmentationTest.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayer__1_.coverage" NAME="SingleLayer (1) Coverage Results" MODIFIED="1739717760819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/single_layer_network" />
+    <SUITE FILE_PATH="coverage/singleLayer$DataImport.coverage" NAME="DataImport Coverage Results" MODIFIED="1726072121712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$AugmentationTest.coverage" NAME="AugmentationTest Coverage Results" MODIFIED="1739719488559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$example_01_load_db.coverage" NAME="example_01_load_db Coverage Results" MODIFIED="1737917628140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch/PolLettDB" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$DataImport.coverage" NAME="DataImport Coverage Results" MODIFIED="1726072774371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerOther.coverage" NAME="SingleLayerOther Coverage Results" MODIFIED="1727456251492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$lol.coverage" NAME="lol Coverage Results" MODIFIED="1739717425365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch/single_layer_network" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayerFromChat.coverage" NAME="MultiLayerFromChat Coverage Results" MODIFIED="1727463235023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multi_layer" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1726073999744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayer.coverage" NAME="SingleLayer Coverage Results" MODIFIED="1739730092456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerFromChat.coverage" NAME="SingleLayerFromChat Coverage Results" MODIFIED="1726164573191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="Some tests on single layer neural network.">
-      <change afterPath="$PROJECT_DIR$/Augmenter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChartDrawer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trainer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multi_layer_network/MultiLayer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multi_layer_network/MultiLayerNN.py" afterDir="false" />
+    <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="Code refactorization and add multi layer neural network model.">
+      <change afterPath="$PROJECT_DIR$/conv_network/Convolution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conv_network/ConvolutionNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_layer_network/AugmentationTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/single_layer_network/AugmentationTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi_layer_network/MultiLayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/multi_layer_network/MultiLayer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single_layer_network/SingleLayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/single_layer_network/SingleLayer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +24,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;P1200&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/P1200/NeuralNetworks.git&quot;,
+    &quot;accountId&quot;: &quot;ac3b720a-3a76-4a77-bdff-1c057504a68b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -41,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.AugmentationTest.executor": "Run",
+    "Python.Convolution.executor": "Run",
     "Python.DataImport.executor": "Run",
     "Python.MultiLayer.executor": "Run",
     "Python.MultiLayerFromChat.executor": "Run",
@@ -53,8 +68,8 @@
     "Python.example_01_load_db.executor": "Debug",
     "Python.lol.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/sekwo/OneDrive/Pulpit/NeuralNetworks/multi_layer_network/MultiLayer.py",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/sekwo/OneDrive/Pulpit/NeuralNetworks/conv_network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +82,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks\conv_network" />
       <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks\multi_layer_network" />
       <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks" />
     </key>
@@ -76,7 +92,7 @@
       <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks\Old" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SingleLayer">
+  <component name="RunManager" selected="Python.Convolution">
     <configuration name="AugmentationTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuralNetworks" />
       <option name="ENV_FILES" value="" />
@@ -92,6 +108,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/single_layer_network/AugmentationTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Convolution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NeuralNetworks" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conv_network/Convolution.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,14 +186,16 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.Convolution" />
       <item itemvalue="Python.MultiLayer" />
       <item itemvalue="Python.AugmentationTest" />
       <item itemvalue="Python.SingleLayer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SingleLayer" />
+        <item itemvalue="Python.Convolution" />
         <item itemvalue="Python.MultiLayer" />
+        <item itemvalue="Python.SingleLayer" />
         <item itemvalue="Python.AugmentationTest" />
       </list>
     </recent_temporary>
@@ -190,7 +231,7 @@
       <workItem from="1739214555188" duration="13474000" />
       <workItem from="1739716609544" duration="20515000" />
       <workItem from="1739796677322" duration="24198000" />
-      <workItem from="1739892126833" duration="15674000" />
+      <workItem from="1739892126833" duration="39328000" />
     </task>
     <task id="LOCAL-00001" summary="Some tests on single layer neural network.">
       <option name="closed" value="true" />
@@ -200,15 +241,35 @@
       <option name="project" value="LOCAL" />
       <updated>1739730597074</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Code refactorization and add multi layer neural network model.">
+      <option name="closed" value="true" />
+      <created>1739963141704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739963141704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Some tests on single layer neural network." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some tests on single layer neural network." />
+    <MESSAGE value="Code refactorization and add multi layer neural network model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactorization and add multi layer neural network model." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -235,10 +296,11 @@
     <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayerNN.coverage" NAME="MultiLayerNN Coverage Results" MODIFIED="1739888847355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multi_layer_network" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$DataImport.coverage" NAME="DataImport Coverage Results" MODIFIED="1726072774371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerOther.coverage" NAME="SingleLayerOther Coverage Results" MODIFIED="1727456251492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayer.coverage" NAME="MultiLayer Coverage Results" MODIFIED="1739955174380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayer.coverage" NAME="MultiLayer Coverage Results" MODIFIED="1739987949942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayerFromChat.coverage" NAME="MultiLayerFromChat Coverage Results" MODIFIED="1727463235023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multi_layer" />
-    <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayer.coverage" NAME="SingleLayer Coverage Results" MODIFIED="1739962523217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayer.coverage" NAME="SingleLayer Coverage Results" MODIFIED="1739987892554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/singleLayer$DataImport.coverage" NAME="DataImport Coverage Results" MODIFIED="1726072121712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$Convolution.coverage" NAME="Convolution Coverage Results" MODIFIED="1739988511373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$lol.coverage" NAME="lol Coverage Results" MODIFIED="1739717425365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch/single_layer_network" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1726073999744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerFromChat.coverage" NAME="SingleLayerFromChat Coverage Results" MODIFIED="1726164573191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

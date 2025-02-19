@@ -2,13 +2,13 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader, random_split
+from torch.utils.data import DataLoader
 import PolLettDB.PolLettDB as pld
 from Augmenter import Augmenter
 from ChartDrawer import ChartDrawer
 from Trainer import Trainer
+from conv_network.ConvolutionNN import ConvolutionNN
 from single_layer_network.ImageDataset import ImageDataset
-from multi_layer_network.MultiLayerNN import MultiLayerNN
 
 INPUT_SIZE = 64 * 64
 NUM_CLASSES = 80
@@ -32,7 +32,7 @@ def random_split_data(X, y, split_sizes):
     return (X_train, y_train), (X_val, y_val), (X_test, y_test)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = MultiLayerNN(INPUT_SIZE, NUM_CLASSES).to(device)
+model = ConvolutionNN(NUM_CLASSES).to(device)
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
     'PolLettDB/pol_lett_db.bin',

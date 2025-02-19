@@ -8,14 +8,14 @@ from Augmenter import Augmenter
 from ChartDrawer import ChartDrawer
 from Trainer import Trainer
 from single_layer_network.ImageDataset import ImageDataset
-from single_layer_network.SingleLayerNN import SingleLayerNN
+from multi_layer_network.MultiLayerNN import MultiLayerNN
 
 INPUT_SIZE = 64 * 64
 NUM_CLASSES = 80
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = SingleLayerNN(INPUT_SIZE, NUM_CLASSES).to(device)
+model = MultiLayerNN(INPUT_SIZE, NUM_CLASSES).to(device)
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
     'PolLettDB/pol_lett_db.bin',
@@ -55,7 +55,7 @@ trainer = Trainer(device)
 
 loss_history, accuracy_history = trainer.train_validate_test(model, train_loader, val_loader, test_loader, criterion,
                                                              optimizer,
-                                                             num_epochs=20)
+                                                             num_epochs=1000)
 
 epochs = range(1, len(loss_history) + 1)
 

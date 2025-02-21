@@ -1,3 +1,5 @@
+import time
+
 import numpy as np
 import torch
 import torch.nn as nn
@@ -79,9 +81,12 @@ optimizer = optim.SGD(model.parameters(), lr=0.01)
 
 trainer = Trainer(device)
 
+start_time = time.time()
 loss_history, accuracy_history = trainer.train_validate_test(model, train_loader, val_loader, test_loader, criterion,
                                                              optimizer,
                                                              num_epochs=200)
+end_time = time.time()
+total_time = end_time - start_time
 
 epochs = range(1, len(loss_history) + 1)
 

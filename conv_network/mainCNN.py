@@ -1,6 +1,6 @@
 from NeuralNetworkPipeline import NeuralNetworkPipeline
-from conv_network.ConvolutionNN import ConvolutionNN
+from conv_network.ConvolutionalNN import ConvolutionalNN
 
-model = ConvolutionNN(num_classes=80)
+model = ConvolutionalNN(num_classes=80)
 pipeline = NeuralNetworkPipeline(model)
 pipeline.run_pipeline()

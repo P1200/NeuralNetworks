@@ -62,7 +62,7 @@ class NeuralNetworkPipeline:
         total_time = end_time - start_time
         print(f"\nTotal training time: {total_time:.2f} seconds")
 
-        return loss_history, accuracy_history
+        return loss_history, accuracy_history, total_time
 
     def visualize_results(self, loss_history, accuracy_history):
         epochs = range(1, len(loss_history) + 1)
@@ -70,7 +70,9 @@ class NeuralNetworkPipeline:
         chart_drawer.draw_loss_chart(loss_history)
         chart_drawer.draw_accuracy_chart(accuracy_history)
 
-    def run_pipeline(self):
+    def run_pipeline(self, visualize_results=True):
         self.prepare_data()
-        loss_history, accuracy_history = self.train_and_evaluate()
-        self.visualize_results(loss_history, accuracy_history)
+        loss_history, accuracy_history, train_time = self.train_and_evaluate()
+        if visualize_results:
+            self.visualize_results(loss_history, accuracy_history)
+        return loss_history, accuracy_history, train_time

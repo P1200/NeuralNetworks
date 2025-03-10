@@ -1,6 +1,19 @@
+import numpy as np
+
 from NeuralNetworkPipeline import NeuralNetworkPipeline
 from conv_network.ConvolutionalNN import ConvolutionalNN
 
-model = ConvolutionalNN(num_classes=80)
-pipeline = NeuralNetworkPipeline(model)
-pipeline.run_pipeline()
+repeat_teaching_number = 100
+samples_to_mean = 10
+
+mean_accuracy = 0
+mean_train_time = 0
+for individual in range(repeat_teaching_number):
+    model = ConvolutionalNN(num_classes=80)
+    pipeline = NeuralNetworkPipeline(model)
+    loss_history, accuracy_history, train_time = pipeline.run_pipeline(False)
+    mean_accuracy += np.sum(np.sort(accuracy_history)[-samples_to_mean:][::-1])
+    mean_train_time += train_time
+
+print("Mean accuracy in " + str(repeat_teaching_number) + " models is " + str(mean_accuracy / (repeat_teaching_number * samples_to_mean)))
+print("Mean train time: " + str(mean_train_time / repeat_teaching_number))

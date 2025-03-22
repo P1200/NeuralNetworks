@@ -1,5 +1,6 @@
 import numpy as np
 
+from LogUtils import log_hardware_info, get_script_name
 from NeuralNetworkPipeline import NeuralNetworkPipeline
 from conv_network.ConvolutionalNN import ConvolutionalNN
 
@@ -17,3 +18,4 @@ for individual in range(repeat_teaching_number):
 
 print("Mean accuracy in " + str(repeat_teaching_number) + " models is " + str(mean_accuracy / (repeat_teaching_number * samples_to_mean)))
 print("Mean train time: " + str(mean_train_time / repeat_teaching_number))
+log_hardware_info(get_script_name() + ".txt")

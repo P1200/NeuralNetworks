@@ -6,6 +6,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, random_split
 import PolLettDB.PolLettDB as pld
 from ChartDrawer import ChartDrawer
+from LogUtils import log_to_file, get_script_name
 from Trainer import Trainer
 from ImageDataset import ImageDataset
 
@@ -61,6 +62,8 @@ class NeuralNetworkPipeline:
         end_time = time.time()
         total_time = end_time - start_time
         print(f"\nTotal training time: {total_time:.2f} seconds")
+        log_entry = [total_time, " ", " ", " ", " "]
+        log_to_file(log_entry, get_script_name() + ".txt")
 
         return loss_history, accuracy_history, total_time
 

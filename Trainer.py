@@ -1,5 +1,7 @@
 import torch
 
+from LogUtils import log_to_file, get_script_name
+
 
 class Trainer:
     def __init__(self, device):
@@ -19,6 +21,8 @@ class Trainer:
             print(f"Epoch [{epoch + 1}/{num_epochs}] - "
                   f"Train Loss: {avg_train_loss:.4f}, "
                   f"Test Accuracy: Test Accuracy: {test_accuracy:.2f}%")
+            log_entry = [" ", epoch, avg_train_loss, avg_test_loss, test_accuracy]
+            log_to_file(log_entry, get_script_name() + ".txt")
         return loss_history, accuracy_history
 
     def test(self, criterion, model, test_loader):

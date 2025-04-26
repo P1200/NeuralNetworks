@@ -7,12 +7,10 @@ import torch
 
 
 def get_script_name():
-    """ Pobiera nazwę skryptu (bez rozszerzenia) """
     return os.path.splitext(os.path.basename(sys.argv[0]))[0]
 
 
 def log_to_file(log_data, file_path):
-    """ Zapisuje logi do pliku CSV """
     file_exists = os.path.isfile(file_path)
 
     with open(file_path, mode='a', newline='') as file:
@@ -21,8 +19,8 @@ def log_to_file(log_data, file_path):
             writer.writerow(["Time", "Epoch", "Train Loss", "Val Loss", "Accuracy"])
         writer.writerow(log_data)
 
+
 def get_hardware_info():
-    """ Pobiera informacje o sprzęcie: CPU, GPU i system operacyjny """
     info = {
         "System": platform.system(),
         "Wersja systemu": platform.version(),
@@ -33,8 +31,8 @@ def get_hardware_info():
     }
     return info
 
+
 def log_hardware_info(file_path):
-    """ Zapisuje informacje o sprzęcie do pliku """
     with open(file_path, mode='a', newline='') as file:
         file.write("=== HARDWARE AND SOFTWARE INFO ===\n")
         for key, value in get_hardware_info().items():

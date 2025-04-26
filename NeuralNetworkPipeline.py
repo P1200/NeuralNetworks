@@ -35,7 +35,7 @@ class NeuralNetworkPipeline:
         images = np.expand_dims(images, axis=1)
         images = torch.tensor(images, dtype=torch.float32)
 
-        # Mapp labels to indices
+        # Map labels to indices
         unique_labels = np.unique(loaded_labels)
         label_mapping = {label: idx for idx, label in enumerate(unique_labels)}
         mapped_labels = np.array([label_mapping[label] for label in loaded_labels])

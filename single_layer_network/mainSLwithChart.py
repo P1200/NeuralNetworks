@@ -1,5 +1,3 @@
-import numpy as np
-
 from NeuralNetworkPipeline import NeuralNetworkPipeline
 from single_layer_network.SingleLayerNN import SingleLayerNN
 

@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="Add labels to plot with char images.">
+    <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="In progress...">
+      <change afterPath="$PROJECT_DIR$/TestCnnModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestSlModel.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/char_segmentation/IMG_0105.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/char_segmentation/PhotoScan.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/char_segmentation/PhotoScan2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_segmentation/Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_segmentation/Test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_segmentation/Test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char_segmentation/TestVPCimproved.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChartDrawer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChartDrawer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkPipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkPipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conv_network/mainCNNwithChart.py" beforeDir="false" afterPath="$PROJECT_DIR$/conv_network/mainCNNwithChart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/multi_layer_network/mainMLwithChart.py" beforeDir="false" afterPath="$PROJECT_DIR$/multi_layer_network/mainMLwithChart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single_layer_network/mainSLwithChart.py" beforeDir="false" afterPath="$PROJECT_DIR$/single_layer_network/mainSLwithChart.py" afterDir="false" />
@@ -79,7 +76,17 @@
     "Python.Test.executor": "Run",
     "Python.Test2.executor": "Run",
     "Python.Test3.executor": "Run",
+    "Python.Test4.executor": "Run",
+    "Python.Test5.executor": "Run",
+    "Python.Test6.executor": "Run",
+    "Python.TestCnnModel.executor": "Run",
+    "Python.TestSlModel.executor": "Run",
+    "Python.TestVPC.executor": "Run",
+    "Python.TestVPCimproved.executor": "Run",
     "Python.example_01_load_db.executor": "Run",
+    "Python.fromLib.executor": "Run",
+    "Python.hem.executor": "Run",
+    "Python.lineSegmentation.executor": "Run",
     "Python.lol.executor": "Run",
     "Python.main.executor": "Run",
     "Python.mainCNN (1).executor": "Run",
@@ -90,7 +97,7 @@
     "Python.mainSL.executor": "Run",
     "Python.mainSLwithChart.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "segmentation",
     "last_opened_file_path": "C:/Users/sekwo/OneDrive/Pulpit",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -104,11 +111,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sekwo\PycharmProjects\NeuralNetworks" />
       <recent name="C:\Users\sekwo\PycharmProjects\NeuralNetworks\char_segmentation" />
       <recent name="C:\Users\sekwo\PycharmProjects\NeuralNetworks\conv_network" />
       <recent name="C:\Users\sekwo\PycharmProjects\NeuralNetworks\multi_layer_network" />
       <recent name="C:\Users\sekwo\PycharmProjects\NeuralNetworks\single_layer_network" />
-      <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks\conv_network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sekwo\PycharmProjects\NeuralNetworks\char_segmentation" />
@@ -118,8 +125,8 @@
       <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks\PyTorch\single_layer_network" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mainCNNwithChart">
-    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.TestCnnModel">
+    <configuration name="TestCnnModel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuralNetworks" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,12 +135,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/char_segmentation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/char_segmentation/Test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestCnnModel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSlModel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuralNetworks" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,12 +158,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/char_segmentation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/char_segmentation/Test2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestSlModel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,7 +172,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TestVPCimproved" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuralNetworks" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,7 +186,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/char_segmentation/Test3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/char_segmentation/TestVPCimproved.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,19 +266,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.mainCNNwithChart" />
+      <item itemvalue="Python.TestCnnModel" />
+      <item itemvalue="Python.TestSlModel" />
       <item itemvalue="Python.mainMLwithChart" />
       <item itemvalue="Python.mainSLwithChart" />
-      <item itemvalue="Python.Test" />
-      <item itemvalue="Python.Test2" />
-      <item itemvalue="Python.Test3" />
+      <item itemvalue="Python.TestVPCimproved" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestCnnModel" />
+        <item itemvalue="Python.TestSlModel" />
+        <item itemvalue="Python.TestVPCimproved" />
         <item itemvalue="Python.mainMLwithChart" />
         <item itemvalue="Python.mainSLwithChart" />
-        <item itemvalue="Python.Test3" />
-        <item itemvalue="Python.Test2" />
-        <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +326,8 @@
       <workItem from="1743858301565" duration="3539000" />
       <workItem from="1743967260900" duration="7058000" />
       <workItem from="1744191651190" duration="14029000" />
-      <workItem from="1745596534826" duration="4564000" />
+      <workItem from="1745596534826" duration="12635000" />
+      <workItem from="1745745400676" duration="38528000" />
     </task>
     <task id="LOCAL-00001" summary="Some tests on single layer neural network.">
       <option name="closed" value="true" />
@@ -393,7 +401,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743188263249</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Translate charts into polish.">
+      <option name="closed" value="true" />
+      <created>1745675424069</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745675424069</updated>
+    </task>
+    <task id="LOCAL-00011" summary="In progress...">
+      <option name="closed" value="true" />
+      <created>1745789410738</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745789410738</updated>
+    </task>
+    <task id="LOCAL-00012" summary="In progress...">
+      <option name="closed" value="true" />
+      <created>1745871718340</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745871718340</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +463,9 @@
     <MESSAGE value="Add teaching several models in a loop to mediate neural network scores." />
     <MESSAGE value="Add logging information to file." />
     <MESSAGE value="Add labels to plot with char images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add labels to plot with char images." />
+    <MESSAGE value="Translate charts into polish." />
+    <MESSAGE value="In progress..." />
+    <option name="LAST_COMMIT_MESSAGE" value="In progress..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -447,31 +481,41 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayer__1_.coverage" NAME="SingleLayer (1) Coverage Results" MODIFIED="1739717760819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/single_layer_network" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$NeuralNetworkPipeline.coverage" NAME="NeuralNetworkPipeline Coverage Results" MODIFIED="1740164979916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$Test4.coverage" NAME="Test4 Coverage Results" MODIFIED="1745680089470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayerNN.coverage" NAME="MultiLayerNN Coverage Results" MODIFIED="1739888847355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multi_layer_network" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerOther.coverage" NAME="SingleLayerOther Coverage Results" MODIFIED="1727456251492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$lineSegmentation.coverage" NAME="lineSegmentation Coverage Results" MODIFIED="1745834578919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayer.coverage" NAME="MultiLayer Coverage Results" MODIFIED="1740165266177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$MultiLayerFromChat.coverage" NAME="MultiLayerFromChat Coverage Results" MODIFIED="1727463235023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multi_layer" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$fromLib.coverage" NAME="fromLib Coverage Results" MODIFIED="1745679742224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayer.coverage" NAME="SingleLayer Coverage Results" MODIFIED="1740165171245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$mainML.coverage" NAME="mainML Coverage Results" MODIFIED="1741183549880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NeuralNetworks$mainSLwithChart.coverage" NAME="mainSLwithChart Coverage Results" MODIFIED="1745673749797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$mainSLwithChart.coverage" NAME="mainSLwithChart Coverage Results" MODIFIED="1745867193126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$mainSL.coverage" NAME="mainSL Coverage Results" MODIFIED="1742244253540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$hem.coverage" NAME="hem Coverage Results" MODIFIED="1745681614327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$Convolution.coverage" NAME="Convolution Coverage Results" MODIFIED="1740165423755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$mainCNN__1_.coverage" NAME="mainCNN Coverage Results" MODIFIED="1740243894360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1744215651187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$Test.coverage" NAME="Test Coverage Results" MODIFIED="1744215433336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerFromChat.coverage" NAME="SingleLayerFromChat Coverage Results" MODIFIED="1726164573191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NeuralNetworks$mainMLwithChart.coverage" NAME="mainMLwithChart Coverage Results" MODIFIED="1745674323022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$mainMLwithChart.coverage" NAME="mainMLwithChart Coverage Results" MODIFIED="1745867381952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$AugmentationTest.coverage" NAME="AugmentationTest Coverage Results" MODIFIED="1739887787221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$example_01_load_db.coverage" NAME="example_01_load_db Coverage Results" MODIFIED="1740149059534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PolLettDB" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$DataImport.coverage" NAME="DataImport Coverage Results" MODIFIED="1726072774371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$main.coverage" NAME="main Coverage Results" MODIFIED="1740165901481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$Test5.coverage" NAME="Test5 Coverage Results" MODIFIED="1745680864693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$TestVPC.coverage" NAME="TestVPC Coverage Results" MODIFIED="1745688895119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$ShowImages.coverage" NAME="ShowImages Coverage Results" MODIFIED="1743179252527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PolLettDB" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$TestCnnModel.coverage" NAME="TestCnnModel Coverage Results" MODIFIED="1746203352237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerNN.coverage" NAME="SingleLayerNN Coverage Results" MODIFIED="1740322356130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/single_layer_network" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1744225322518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/singleLayer$DataImport.coverage" NAME="DataImport Coverage Results" MODIFIED="1726072121712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NeuralNetworks$mainCNNwithChart.coverage" NAME="mainCNNwithChart Coverage Results" MODIFIED="1745674770997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$Test6.coverage" NAME="Test6 Coverage Results" MODIFIED="1745681437912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$mainCNNwithChart.coverage" NAME="mainCNNwithChart Coverage Results" MODIFIED="1746203102664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$TestSlModel.coverage" NAME="TestSlModel Coverage Results" MODIFIED="1746106782580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$lol.coverage" NAME="lol Coverage Results" MODIFIED="1739717425365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch/single_layer_network" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1726073999744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$mainCNN.coverage" NAME="mainCNN Coverage Results" MODIFIED="1741288060245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$TestVPCimproved.coverage" NAME="TestVPCimproved Coverage Results" MODIFIED="1745871915413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
   </component>
 </project>

@@ -9,6 +9,7 @@ image = cv2.imread('PhotoScan2.jpg', cv2.IMREAD_GRAYSCALE)
 
 # 2. Binaryzacja (czarno-biały obraz)
 _, binary = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+plt.imshow(binary, cmap='gray')
 
 # 3. Podział na linie z inteligentnym wyborem
 horizontal_sum = np.sum(binary, axis=1)
@@ -52,7 +53,7 @@ for y1, y2 in potential_splits:
 
 plt.figure(figsize=(12, 8))
 plt.imshow(color_image)
-plt.title('Podział na linie (niebieskie)')
+plt.title('Podział na linie')
 plt.axis('off')
 plt.show()
 
@@ -91,7 +92,7 @@ for start, end in line_positions:
 
 plt.figure(figsize=(12, 8))
 plt.imshow(color_image)
-plt.title('Podział na linie (niebieskie)')
+plt.title('Podział na linie')
 plt.axis('off')
 plt.show()
 

@@ -46,10 +46,7 @@ model.to(device)
 # Transform images
 transform = transforms.Compose([
     transforms.ToPILImage(),
-    transforms.Grayscale(num_output_channels=1),
-    transforms.Resize((64, 64)),
-    transforms.ToTensor(),
-    transforms.Normalize((0.5,), (0.5,))
+    transforms.ToTensor()
 ])
 
 # Read images
@@ -132,7 +129,6 @@ for idx, (img, label) in enumerate(zip(letter_images, predicted_chars)):
 plt.figure(figsize=(12, 8))
 plt.imshow(canvas_pil, cmap='gray')
 plt.axis('off')
-plt.title('Letters with Labels')
 plt.show()
 
 # Możesz też zapisać:

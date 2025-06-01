@@ -7,8 +7,8 @@ from skimage.metrics import structural_similarity as ssim
 
 
 def preprocess_letter(letter_image, target_size=64, max_letter_size=30, thickness=2):
-    # Wykonaj dilatację (pogrubienie liter) przed obróbką
-    kernel = np.ones((thickness, thickness), np.uint8)  # Ustal rozmiar jądra (kernel) dla dilatacji
+    # Dilation
+    kernel = np.ones((thickness, thickness), np.uint8)
     dilated_image = cv2.dilate(letter_image, kernel, iterations=1)
 
     coords = cv2.findNonZero(dilated_image)
@@ -30,8 +30,8 @@ def preprocess_letter(letter_image, target_size=64, max_letter_size=30, thicknes
 
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    'pol_lett_db.bin',
-    'pol_lett_db_labels.bin')
+    'PolLettDB/pol_lett_db.bin',
+    'PolLettDB/pol_lett_db_labels.bin')
 
 d = 1200
 block_size = 64 * 64
@@ -63,12 +63,11 @@ plt.imshow(image, cmap='gray', vmin=0, vmax=255)
 plt.axis('off')
 plt.show()
 
-# Oblicz odległość euklidesową
+# Euclidean distance
 euclidean_distance = np.linalg.norm(letterFromDataset.astype(np.float32) - image.astype(np.float32))
 
-# Oblicz SSIM (zwraca wartość od -1 do 1, gdzie 1 = identyczne obrazy)
+# SSIM
 ssim_value, _ = ssim(letterFromDataset, image, full=True)
 
-# Wyniki
 print(f"Odległość euklidesowa: {euclidean_distance:.2f}")
 print(f"SSIM: {ssim_value:.4f}")

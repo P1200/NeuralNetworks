@@ -11,15 +11,11 @@ from PIL import Image, ImageDraw, ImageFont
 from conv_network.ConvolutionalNN import ConvolutionalNN
 
 
-def preprocess_letter(letter_image, target_size=64, max_letter_size=30, thickness=2):
+def preprocess_letter(letter_image, target_size=64, max_letter_size=30):
 
-    # Wykonaj dilatację (pogrubienie liter) przed obróbką
-    kernel = np.ones((thickness, thickness), np.uint8)  # Ustal rozmiar jądra (kernel) dla dilatacji
-    dilated_image = cv2.dilate(letter_image, kernel, iterations=1)
-
-    coords = cv2.findNonZero(dilated_image)
+    coords = cv2.findNonZero(letter_image)
     x, y, w, h = cv2.boundingRect(coords)
-    cropped = dilated_image[y:y + h, x:x + w]
+    cropped = letter_image[y:y + h, x:x + w]
 
     scale = max_letter_size / max(h, w)
     new_w = int(w * scale)
@@ -37,7 +33,7 @@ def preprocess_letter(letter_image, target_size=64, max_letter_size=30, thicknes
 
 # Upload model
 model = ConvolutionalNN(num_classes=80)
-model.load_state_dict(torch.load("cnn_model.pth"))
+model.load_state_dict(torch.load("../cnn_model.pth"))
 model.eval()
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -50,7 +46,7 @@ transform = transforms.Compose([
 ])
 
 # Read images
-folder_path = "char_segmentation/literki"
+folder_path = "../sentences_from_dataset_test/literki"
 
 image_files = sorted(
     [f for f in os.listdir(folder_path) if f.endswith('.png')],

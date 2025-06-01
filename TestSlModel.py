@@ -13,8 +13,8 @@ from single_layer_network.SingleLayerNN import SingleLayerNN
 
 def preprocess_letter(letter_image, target_size=64, max_letter_size=30, thickness=2):
 
-    # Wykonaj dilatację (pogrubienie liter) przed obróbką
-    kernel = np.ones((thickness, thickness), np.uint8)  # Ustal rozmiar jądra (kernel) dla dilatacji
+    # Dilation
+    kernel = np.ones((thickness, thickness), np.uint8)
     dilated_image = cv2.dilate(letter_image, kernel, iterations=1)
 
     coords = cv2.findNonZero(dilated_image)
@@ -89,30 +89,26 @@ for img_file in image_files:
     predicted_chars.append(predicted_char)
     letter_images.append(image)
 
-# Przygotuj galerię
+# Show results
 num_letters = len(letter_images)
 letter_size = 64
-label_height = 30  # miejsce na etykietę pod literką
+label_height = 30
 
-# Ustal ile liter na rząd (np. max 10)
 letters_per_row = 10
 num_rows = (num_letters + letters_per_row - 1) // letters_per_row
 
-# Przygotuj pusty canvas
 canvas_width = letters_per_row * letter_size
 canvas_height = num_rows * (letter_size + label_height)
 
-canvas = np.ones((canvas_height, canvas_width), dtype=np.uint8) * 255  # białe tło
+canvas = np.ones((canvas_height, canvas_width), dtype=np.uint8) * 255
 
-# Najpierw konwertujemy canvas (NumPy) do PIL Image
 canvas_pil = Image.fromarray(canvas).convert("RGB")
 draw = ImageDraw.Draw(canvas_pil)
 
-# Użyj czcionki systemowej (np. Arial z polskimi znakami)
 try:
-    font = ImageFont.truetype("arial.ttf", 20)  # Możesz zmienić ścieżkę lub font
+    font = ImageFont.truetype("arial.ttf", 20)
 except IOError:
-    font = ImageFont.load_default()  # awaryjnie bez polskich znaków
+    font = ImageFont.load_default()
 
 for idx, (img, label) in enumerate(zip(letter_images, predicted_chars)):
     row = idx // letters_per_row
@@ -121,21 +117,18 @@ for idx, (img, label) in enumerate(zip(letter_images, predicted_chars)):
     x = col * letter_size
     y = row * (letter_size + label_height)
 
-    # Wklej literkę (wrzucamy z powrotem NumPy na PIL)
     letter_pil = Image.fromarray(img)
     canvas_pil.paste(letter_pil.convert("RGB"), (x, y))
 
-    # Dodaj etykietę (z polskimi znakami!)
     draw.text((x + 5, y + letter_size + 5), label, font=font, fill=(0, 0, 0))
 
-# Pokaż lub zapisz
 plt.figure(figsize=(12, 8))
 plt.imshow(canvas_pil, cmap='gray')
 plt.axis('off')
 plt.title('Letters with Labels')
 plt.show()
 
-# Możesz też zapisać:
+# Or save to file
 # cv2.imwrite("recognized_letters.png", canvas)
 
 final_text = ''.join(predicted_chars)

@@ -54,7 +54,7 @@ plt.imshow(letterFromDataset, cmap='gray', vmin=0, vmax=255)
 plt.axis('off')
 # plt.text(32, 70, str(classes[label]), fontsize=8, ha='center', va='top')
 
-image = Image.open('../char_segmentation/literki/letter_0020.png')
+image = Image.open('../char_segmentation/letters/letter_0020.png')
 image = np.array(image)
 image = preprocess_letter(image)
 

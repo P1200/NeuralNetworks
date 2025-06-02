@@ -46,7 +46,7 @@ transform = transforms.Compose([
 ])
 
 # Read images
-folder_path = "../sentences_from_dataset_test/literki"
+folder_path = "letters"
 
 image_files = sorted(
     [f for f in os.listdir(folder_path) if f.endswith('.png')],

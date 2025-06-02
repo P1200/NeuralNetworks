@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.spatial.distance import euclidean
 from skimage.metrics import structural_similarity as ssim
 import PolLettDB.PolLettDB as pld
 from itertools import combinations
@@ -37,16 +38,33 @@ print(f"Znaleziono {len(images_0)} wystąpień znaku '{target_char}'.")
 
 # Count SSIM
 ssim_values = []
+euclidean_values = []
 for img1, img2 in combinations(images_0, 2):
     val, _ = ssim(img1, img2, full=True)
     ssim_values.append(val)
 
+    # Euclidean distance
+    dist = euclidean(img1.flatten(), img2.flatten())
+    euclidean_values.append(dist)
+
 plt.figure(figsize=(10, 6))
 plt.hist(ssim_values, bins=50, color='skyblue', edgecolor='black')
-plt.title(f'Histogram SSIM dla wszystkich wystąpień znaku "{target_char}"')
-plt.xlabel('SSIM')
-plt.ylabel('Liczba par')
+plt.title(f'Histogram SSIM dla wszystkich wystąpień znaku "{target_char}"', fontsize=16)
+plt.xlabel('SSIM', fontsize=16)
+plt.ylabel('Liczba par', fontsize=16)
+plt.tick_params(axis='both', labelsize=14)
 plt.grid(True)
 plt.tight_layout()
 plt.savefig(f"ssim_histogram_{target_char}.eps", format='eps')
+plt.show()
+
+plt.figure(figsize=(10, 6))
+plt.hist(euclidean_values, bins=30, color='steelblue', edgecolor='black')
+plt.title(f'Histogram odległości euklidesowych dla wszystkich wystąpień znaku "{target_char}"', fontsize=16)
+plt.xlabel("Odległość euklidesowa", fontsize=16)
+plt.ylabel("Liczba par", fontsize=16)
+plt.tick_params(axis='both', labelsize=14)
+plt.grid(True)
+plt.tight_layout()
+plt.savefig(f"euclidean_histogram_{target_char}.eps", format='eps')
 plt.show()

@@ -83,18 +83,19 @@ def extract_conf_matrix_subset(conf_matrix, true_indices, pred_indices, labels):
 
 def plot_conf_matrix(matrix, x_labels, y_labels, title, filename):
     plt.figure(figsize=(len(x_labels) * 0.6, len(y_labels) * 0.6))
-    sns.heatmap(matrix, xticklabels=x_labels, yticklabels=y_labels,
-                annot=True, fmt='.1f', cmap='Blues', cbar=False)
-    plt.xlabel("Predykcja")
-    plt.ylabel("Prawdziwa klasa")
-    plt.title(title)
+    ax = sns.heatmap(matrix, xticklabels=x_labels, yticklabels=y_labels,
+                annot=True, fmt='.1f', cmap='Blues', cbar=False, annot_kws={"size": 14})
+    plt.xlabel("Predykcja", fontsize=25)
+    plt.ylabel("Prawdziwa klasa", fontsize=25)
+    ax.tick_params(axis='both', labelsize=18)
+    plt.title(title, fontsize=30)
     plt.tight_layout()
     plt.savefig(filename, format='eps')
     plt.close()
 
 
 # Chars to analyze
-selected_chars = ['0', '6', 'l', 'ł', 'o', 't', 'u', 'v', 'z', 'ź', 'ż', 'B', 'H', 'K', 'L', 'Ł', 'O', 'U', 'V', 'Ź']
+selected_chars = ['0', '6', 'l', 'ł', 'o', 'p', 't', 'u', 'v', 'z', 'ź', 'ż', 'B', 'L', 'Ł', 'O', 'U', 'P', 'V', 'Ź']
 
 missing = [char for char in selected_chars if char not in classes]
 if missing:

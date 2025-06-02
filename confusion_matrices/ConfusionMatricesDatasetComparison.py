@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from skimage.metrics import structural_similarity as ssim
 import PolLettDB.PolLettDB as pld
+import matplotlib.patheffects as path_effects
 
 
 def compute_confusion_matrix(images):
@@ -47,24 +48,56 @@ def save_confusion_matrix(matrix, filename='confusion_matrix_dual.png'):
     im1.set_alpha(alpha_upper)
     im2.set_alpha(alpha_lower)
 
-    ax.set_xticks([])
-    ax.set_yticks([])
+    # ax.set_xticks([])
+    # ax.set_yticks([])
+
+    tick_labels = ['0'] * n
+    ax.set_xticks(np.arange(n))
+    ax.set_yticks(np.arange(n))
+    ax.set_xticklabels(tick_labels, fontsize=25)
+    ax.set_yticklabels(tick_labels, fontsize=25)
+
+
 
     for i in range(n):
         for j in range(n):
             if i == j:
-                ax.text(j, i, 'eq', ha='center', va='center', color='black', fontsize=25)
+                ax.text(j, i, 'eq', ha='center', va='center', color='black', fontsize=28)
+
+                # text = ax.text(j, i, 'eq',
+                #                ha='center', va='center', color='black', fontsize=28)
+                #
+                # text.set_path_effects([
+                #     path_effects.Stroke(linewidth=3, foreground='white'),
+                #     path_effects.Normal()
+                # ])
             elif i < j:
                 val = matrix[i, j]
                 if not np.isnan(val):
-                    ax.text(j, i, f"{val:.0f}", ha='center', va='center', color='black', fontsize=25)
+                    ax.text(j, i, f"{val:.0f}", ha='center', va='center', color='black', fontsize=28)
+
+                    # text = ax.text(j, i, f"{val:.0f}",
+                    #                ha='center', va='center', color='black', fontsize=28)
+                    #
+                    # text.set_path_effects([
+                    #     path_effects.Stroke(linewidth=3, foreground='white'),
+                    #     path_effects.Normal()
+                    # ])
             else:
                 val = matrix[i, j]
                 if not np.isnan(val):
-                    ax.text(j, i, f"{val:.3f}", ha='center', va='center', color='white', fontsize=25)
+                    ax.text(j, i, f"{val:.3f}", ha='center', va='center', color='white', fontsize=28)
+
+                    # text = ax.text(j, i, f"{val:.3f}",
+                    #                ha='center', va='center', color='white', fontsize=28)
+                    #
+                    # text.set_path_effects([
+                    #     path_effects.Stroke(linewidth=3, foreground='black'),
+                    #     path_effects.Normal()
+                    # ])
 
     ax.set_title(f'Macierz konfuzji dla znaku {classes[labels[0]]} ze zbioru danych: Odległość (czerwony) nad przekątną, SSIM (niebieski) pod przekątną',
-                 fontsize=27)
+                 fontsize=30)
 
     # cbar1 = fig.colorbar(im1, ax=ax, fraction=0.026, pad=0.06)
     # cbar1.set_label('Odległość euklidesowa', rotation=270, labelpad=35, fontsize=25)
@@ -76,22 +109,22 @@ def save_confusion_matrix(matrix, filename='confusion_matrix_dual.png'):
 
     # Colorbar 1 – Odległość euklidesowa (czerwony)
     cax1 = inset_axes(ax, width="80%", height="2.5%", loc='lower center',
-                      bbox_to_anchor=(0.1, -0.12, 0.8, 1),
+                      bbox_to_anchor=(0.1, -0.05, 0.8, 1),
                       bbox_transform=ax.transAxes, borderpad=0)
     cb1 = fig.colorbar(im1, cax=cax1, orientation='horizontal')
-    cb1.set_label('Odległość euklidesowa', fontsize=25)
-    cb1.ax.tick_params(labelsize=20)
+    cb1.set_label('Odległość euklidesowa', fontsize=30)
+    cb1.ax.tick_params(labelsize=25)
 
     # Colorbar 2 – SSIM (niebieski)
     cax2 = inset_axes(ax, width="80%", height="2.5%", loc='lower center',
-                      bbox_to_anchor=(0.1, -0.19, 0.8, 1),
+                      bbox_to_anchor=(0.1, -0.15, 0.8, 1),
                       bbox_transform=ax.transAxes, borderpad=0)
     cb2 = fig.colorbar(im2, cax=cax2, orientation='horizontal')
-    cb2.set_label('SSIM', fontsize=25)
-    cb2.ax.tick_params(labelsize=20)
+    cb2.set_label('SSIM', fontsize=30)
+    cb2.ax.tick_params(labelsize=25)
 
-    plt.xlabel('Etykieta osi X')
-    plt.ylabel('Etykieta osi Y')
+    # plt.xlabel('Etykieta osi X')
+    # plt.ylabel('Etykieta osi Y')
     plt.tight_layout()
     plt.savefig(filename, dpi=300, bbox_inches='tight')
     plt.close()
@@ -140,4 +173,5 @@ for d in range(0, 80):
     # plt.show()
 
     conf_matrix = compute_confusion_matrix(chars)
-    save_confusion_matrix(conf_matrix, filename=f'same_chars_comparison/confusion_matrix_{classes[labels[0]]}.png')
+    save_confusion_matrix(conf_matrix,
+                          filename=f'same_chars_comparison/{d:02d}_confusion_matrix_{classes[labels[0]]}.png')

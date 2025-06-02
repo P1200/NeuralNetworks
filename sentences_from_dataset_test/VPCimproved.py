@@ -90,7 +90,7 @@ plt.show()
 hist_threshold_ratio = 0.1
 min_distance = 15
 
-os.makedirs('literki', exist_ok=True)
+os.makedirs('letters', exist_ok=True)
 letter_counter = 0
 
 for idx, (y1, y2) in enumerate(line_positions):
@@ -123,7 +123,7 @@ for idx, (y1, y2) in enumerate(line_positions):
         letter_crop = line_img[:, x1:x2]
         if letter_crop.shape[1] > 2 and letter_crop.shape[0] > 2:  # filtracja śmieci
             letter_counter += 1
-            filename = f'literki/letter_{letter_counter:04d}.png'
+            filename = f'letters/letter_{letter_counter:04d}.png'
             cv2.imwrite(filename, letter_crop)  # odwrócenie kolorów
 
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 8))
@@ -134,7 +134,7 @@ for idx, (y1, y2) in enumerate(line_positions):
         cv2.line(color_line, (x2, 0), (x2, h-1), (0, 255, 0), 1)
 
     ax1.imshow(color_line)
-    ax1.set_title(f'Linia {idx+1}: podział na literki (zielone)')
+    ax1.set_title(f'Linia {idx+1}: podział na litery (zielone)')
     ax1.axis('off')
 
     ax2.plot(vertical_sum)
@@ -145,4 +145,4 @@ for idx, (y1, y2) in enumerate(line_positions):
     plt.tight_layout()
     plt.show()
 
-print(f"Zapisano {letter_counter} literek w folderze 'literki/'.")
+print(f"Zapisano {letter_counter} liter w folderze 'letters/'.")

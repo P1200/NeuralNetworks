@@ -53,7 +53,7 @@ transform = transforms.Compose([
 ])
 
 # Read images
-folder_path = "char_segmentation/literki"
+folder_path = "char_segmentation/letters"
 
 image_files = sorted(
     [f for f in os.listdir(folder_path) if f.endswith('.png')],

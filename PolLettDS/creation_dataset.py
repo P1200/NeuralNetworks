@@ -8,7 +8,7 @@
 # *                                  <M.Sawerwain@issi.uz.zgora.pl>         *
 # *                                                                         *
 # *                                                                         *
-# *   Part of the PolLettDB:                                                *
+# *   Part of the PolLettDS:                                                *
 # *         https://github.com/qMSUZ/PolLettDB                              *
 # *                                                                         *
 # * Permission is hereby granted, free of charge, to any person obtaining   *
@@ -31,38 +31,21 @@
 # * THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.              *
 # ***************************************************************************/
 
-
-#import os
+import os
 import glob
-#import numpy as np
+import PolLettDS as pld
 
-#from PIL import Image #, ImageDraw, ImageFilter, ImageEnhance
-#from PIL.ImageOps import crop as pil_image_crop
+fimages, flabels = pld.create_handles_for_db( 'pol_lett_db' )
 
-
-from gimpformats.gimpXcfDocument import GimpDocument
-
-
-#import matplotlib.pyplot as plt
-#import PolLettDB as pld
-
-
-dir_path_in = "./raw_dataset/*.xcf"
-dir_path_out = "./png_files/"
-
-xcf_files = glob.glob( dir_path_in )
-xcf_files.sort()
-
-file_count = len(xcf_files)
+file_png_list = glob.glob("png_files/*.png")
+file_count = len(file_png_list)
 file_idx=1
-
-for fname in xcf_files:
-    print("processing file", file_idx,"/", 
-          file_count, ":", fname, "...", end=" ")
-    doc = GimpDocument( fname )
-    img = doc.layers[0].image
-    fnamefile, ext = doc.fileName.split(".")
-    img.save(dir_path_out+fnamefile+".png")
+for fname in file_png_list:    
+    print("processing file", file_idx,"/", file_count, ":", fname, "...", end=" ")
+    pld.dump_data_to_file(fimages, flabels, fname.replace(os.sep, '/'))
     print(" done", end="\n")
     file_idx=file_idx+1
+
+pld.close_handles( fimages, flabels )
+
 

@@ -2,7 +2,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from skimage.metrics import structural_similarity as ssim
-import PolLettDB.PolLettDB as pld
+import PolLettDS.PolLettDS as pld
 import matplotlib.patheffects as path_effects
 
 
@@ -56,8 +56,6 @@ def save_confusion_matrix(matrix, filename='confusion_matrix_dual.png'):
     ax.set_yticks(np.arange(n))
     ax.set_xticklabels(tick_labels, fontsize=25)
     ax.set_yticklabels(tick_labels, fontsize=25)
-
-
 
     for i in range(n):
         for j in range(n):
@@ -132,8 +130,8 @@ def save_confusion_matrix(matrix, filename='confusion_matrix_dual.png'):
 
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    '../PolLettDB/pol_lett_db.bin',
-    '../PolLettDB/pol_lett_db_labels.bin')
+    '../PolLettDS/pol_lett_ds.bin',
+    '../PolLettDS/pol_lett_ds_labels.bin')
 
 # Map labels to indices
 unique_labels = np.unique(loaded_labels)

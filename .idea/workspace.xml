@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="In progress...">
-      <change afterPath="$PROJECT_DIR$/cnn_model.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SegmentedVsDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/SegmentedVsDataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCnnModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCnnModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSlModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestSlModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/char_segmentation/VPCimproved.py" beforeDir="false" afterPath="$PROJECT_DIR$/char_segmentation/VPCimproved.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolLettDB/example_01_load_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/PolLettDB/example_01_load_dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/confusion_matrices/ConfusionMatricesDatasetComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrices/ConfusionMatricesDatasetComparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confusion_matrices/ConfusionMatrixAccSelected.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrices/ConfusionMatrixAccSelected.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confusion_matrices/HistogramDatasetComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrices/HistogramDatasetComparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentences_from_dataset_test/TestCnnModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentences_from_dataset_test/TestCnnModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentences_from_dataset_test/VPCimproved.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentences_from_dataset_test/VPCimproved.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +133,7 @@
       <recent name="C:\Users\sekwo\OneDrive\Pulpit\NeuralNetworks" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.HistogramDatasetComparison">
+  <component name="RunManager" selected="Python.ConfusionMatricesDatasetComparison">
     <configuration name="ConfusionMatricesDatasetComparison" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuralNetworks" />
       <option name="ENV_FILES" value="" />
@@ -290,10 +282,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ConfusionMatricesDatasetComparison" />
         <item itemvalue="Python.HistogramDatasetComparison" />
         <item itemvalue="Python.ConfusionMatrixAccSelected" />
         <item itemvalue="Python.ConfusionMatrixAccAll" />
-        <item itemvalue="Python.ConfusionMatricesDatasetComparison" />
         <item itemvalue="Python.TestCnnModel" />
       </list>
     </recent_temporary>
@@ -346,7 +338,7 @@
       <workItem from="1745745400676" duration="66621000" />
       <workItem from="1747424853897" duration="36573000" />
       <workItem from="1747823800178" duration="9106000" />
-      <workItem from="1748373063231" duration="36373000" />
+      <workItem from="1748373063231" duration="43194000" />
     </task>
     <task id="LOCAL-00001" summary="Some tests on single layer neural network.">
       <option name="closed" value="true" />
@@ -468,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748774730430</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="In progress...">
+      <option name="closed" value="true" />
+      <created>1748869972930</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748869972930</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +536,7 @@
     <SUITE FILE_PATH="coverage/NeuralNetworks$Test.coverage" NAME="Test Coverage Results" MODIFIED="1744215433336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/char_segmentation" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$SingleLayerFromChat.coverage" NAME="SingleLayerFromChat Coverage Results" MODIFIED="1726164573191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$mainMLwithChart.coverage" NAME="mainMLwithChart Coverage Results" MODIFIED="1745867381952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/NeuralNetworks$ConfusionMatricesDatasetComparison.coverage" NAME="ConfusionMatricesDatasetComparison Coverage Results" MODIFIED="1748812662422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/confusion_matrices" />
+    <SUITE FILE_PATH="coverage/NeuralNetworks$ConfusionMatricesDatasetComparison.coverage" NAME="ConfusionMatricesDatasetComparison Coverage Results" MODIFIED="1748889051369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/confusion_matrices" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$main.coverage" NAME="main Coverage Results" MODIFIED="1740165901481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$ConfusionMatrices.coverage" NAME="ConfusionMatrices Coverage Results" MODIFIED="1747676778903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/confusion_matrices" />
     <SUITE FILE_PATH="coverage/NeuralNetworks$create_sentences.coverage" NAME="CreateSentences Coverage Results" MODIFIED="1748595708986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sentences_from_dataset_test" />

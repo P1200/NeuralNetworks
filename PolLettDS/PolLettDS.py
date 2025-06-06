@@ -8,7 +8,7 @@
 # *                                  <M.Sawerwain@issi.uz.zgora.pl>         *
 # *                                                                         *
 # *                                                                         *
-# *   Part of the PolLettDB:                                                *
+# *   Part of the PolLettDS:                                                *
 # *         https://github.com/qMSUZ/PolLettDB                              *
 # *                                                                         *
 # * Permission is hereby granted, free of charge, to any person obtaining   *
@@ -37,7 +37,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageEnhance
 
 #
-# file name: PolLettDB.py
+# file name: PolLettDS.py
 #
 
 labels = {

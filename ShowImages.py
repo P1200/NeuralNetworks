@@ -1,9 +1,9 @@
 from matplotlib import pyplot as plt
-import PolLettDB.PolLettDB as pld
+import PolLettDS.PolLettDS as pld
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    'pol_lett_db.bin',
-    'pol_lett_db_labels.bin')
+    'pol_lett_ds.bin',
+    'pol_lett_ds_labels.bin')
 
 d = 1200
 block_size = 64 * 64

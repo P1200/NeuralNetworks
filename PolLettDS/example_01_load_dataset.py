@@ -8,7 +8,7 @@
 # *                                  <M.Sawerwain@issi.uz.zgora.pl>         *
 # *                                                                         *
 # *                                                                         *
-# *   Part of the PolLettDB:                                                *
+# *   Part of the PolLettDS:                                                *
 # *         https://github.com/qMSUZ/PolLettDB                              *
 # *                                                                         *
 # * Permission is hereby granted, free of charge, to any person obtaining   *
@@ -31,12 +31,12 @@
 # * THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.              *
 # ***************************************************************************/
 
-import PolLettDB as pld
+import PolLettDS as pld
 import matplotlib.pyplot as plt
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-                                                'pol_lett_db.bin', 
-                                                'pol_lett_db_labels.bin')
+                                                'pol_lett_ds.bin',
+                                                'pol_lett_ds_labels.bin')
 
 d=1202
 block_size=64*64

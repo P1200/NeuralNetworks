@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, random_split
-import PolLettDB.PolLettDB as pld
+import PolLettDS.PolLettDS as pld
 from ChartDrawer import ChartDrawer
 from LogUtils import log_to_file, get_script_name
 from Trainer import Trainer
@@ -27,7 +27,7 @@ class NeuralNetworkPipeline:
         self.optimizer = optim.SGD(self.model.parameters(), lr=self.learning_rate)
         self.trainer = Trainer(self.device)
 
-    def prepare_data(self, data_path='PolLettDB/pol_lett_db.bin', labels_path='PolLettDB/pol_lett_db_labels.bin'):
+    def prepare_data(self, data_path='PolLettDS/pol_lett_ds.bin', labels_path='PolLettDS/pol_lett_ds_labels.bin'):
         loaded_data, loaded_labels, _ = pld.load_pol_lett_db_from_files(data_path, labels_path)
 
         # Reshape images

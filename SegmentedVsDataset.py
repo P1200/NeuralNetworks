@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from PIL import Image
 from matplotlib import pyplot as plt
-import PolLettDB.PolLettDB as pld
+import PolLettDS.PolLettDS as pld
 from skimage.metrics import structural_similarity as ssim
 
 
@@ -30,8 +30,8 @@ def preprocess_letter(letter_image, target_size=64, max_letter_size=30, thicknes
 
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    'PolLettDB/pol_lett_db.bin',
-    'PolLettDB/pol_lett_db_labels.bin')
+    'PolLettDS/pol_lett_ds.bin',
+    'PolLettDS/pol_lett_ds_labels.bin')
 
 d = 1200
 block_size = 64 * 64

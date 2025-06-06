@@ -2,12 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial.distance import euclidean
 from skimage.metrics import structural_similarity as ssim
-import PolLettDB.PolLettDB as pld
+import PolLettDS.PolLettDS as pld
 from itertools import combinations
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    '../PolLettDB/pol_lett_db.bin',
-    '../PolLettDB/pol_lett_db_labels.bin')
+    '../PolLettDS/pol_lett_ds.bin',
+    '../PolLettDS/pol_lett_ds_labels.bin')
 
 unique_labels = np.unique(loaded_labels)
 label_mapping = {label: idx for idx, label in enumerate(unique_labels)}

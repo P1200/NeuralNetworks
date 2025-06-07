@@ -6,8 +6,8 @@ import PolLettDS.PolLettDS as pld
 from itertools import combinations
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    '../PolLettDS/pol_lett_ds.bin',
-    '../PolLettDS/pol_lett_ds_labels.bin')
+    '../PolLettDS/pol_lett_db.bin',
+    '../PolLettDS/pol_lett_db_labels.bin')
 
 unique_labels = np.unique(loaded_labels)
 label_mapping = {label: idx for idx, label in enumerate(unique_labels)}

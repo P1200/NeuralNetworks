@@ -30,8 +30,8 @@ def preprocess_letter(letter_image, target_size=64, max_letter_size=30, thicknes
 
 
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    'PolLettDS/pol_lett_ds.bin',
-    'PolLettDS/pol_lett_ds_labels.bin')
+    'PolLettDS/pol_lett_db.bin',
+    'PolLettDS/pol_lett_db_labels.bin')
 
 d = 1200
 block_size = 64 * 64

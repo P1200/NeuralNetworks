@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="In progress...">
+    <list default="true" id="e7f6e26a-cac3-4269-84cb-c10146fc27b9" name="Changes" comment="Rename database to dataset.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PolLettDB/example_01_load_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/PolLettDB/example_01_load_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkPipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkPipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolLettDS/example_01_load_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/PolLettDS/example_01_load_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolLettDS/pol_lett_ds.bin" beforeDir="false" afterPath="$PROJECT_DIR$/PolLettDS/pol_lett_db.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolLettDS/pol_lett_ds_labels.bin" beforeDir="false" afterPath="$PROJECT_DIR$/PolLettDS/pol_lett_db_labels.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SegmentedVsDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/SegmentedVsDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShowImages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/confusion_matrices/ConfusionMatricesDatasetComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrices/ConfusionMatricesDatasetComparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confusion_matrices/ConfusionMatrixAccAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrices/ConfusionMatrixAccAll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confusion_matrices/ConfusionMatrixAccSelected.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrices/ConfusionMatrixAccSelected.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confusion_matrices/HistogramDatasetComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrices/HistogramDatasetComparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentences_from_dataset_test/CreateSentences.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentences_from_dataset_test/CreateSentences.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +347,7 @@
       <workItem from="1745745400676" duration="66621000" />
       <workItem from="1747424853897" duration="36573000" />
       <workItem from="1747823800178" duration="9106000" />
-      <workItem from="1748373063231" duration="43194000" />
+      <workItem from="1748373063231" duration="45330000" />
     </task>
     <task id="LOCAL-00001" summary="Some tests on single layer neural network.">
       <option name="closed" value="true" />
@@ -468,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748869972930</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Rename database to dataset.">
+      <option name="closed" value="true" />
+      <created>1749234321382</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749234321383</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +525,8 @@
     <MESSAGE value="Add labels to plot with char images." />
     <MESSAGE value="Translate charts into polish." />
     <MESSAGE value="In progress..." />
-    <option name="LAST_COMMIT_MESSAGE" value="In progress..." />
+    <MESSAGE value="Rename database to dataset." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename database to dataset." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

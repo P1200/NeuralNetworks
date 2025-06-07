@@ -27,7 +27,7 @@ class NeuralNetworkPipeline:
         self.optimizer = optim.SGD(self.model.parameters(), lr=self.learning_rate)
         self.trainer = Trainer(self.device)
 
-    def prepare_data(self, data_path='PolLettDS/pol_lett_ds.bin', labels_path='PolLettDS/pol_lett_ds_labels.bin'):
+    def prepare_data(self, data_path='PolLettDS/pol_lett_db.bin', labels_path='PolLettDS/pol_lett_db_labels.bin'):
         loaded_data, loaded_labels, _ = pld.load_pol_lett_db_from_files(data_path, labels_path)
 
         # Reshape images

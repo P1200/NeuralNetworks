@@ -23,8 +23,8 @@ model.to(device)
 
 # Load data
 loaded_data, loaded_labels, labels_count = pld.load_pol_lett_db_from_files(
-    '../PolLettDS/pol_lett_ds.bin',
-    '../PolLettDS/pol_lett_ds_labels.bin')
+    '../PolLettDS/pol_lett_db.bin',
+    '../PolLettDS/pol_lett_db_labels.bin')
 
 # Map labels to indices
 unique_labels = np.unique(loaded_labels)

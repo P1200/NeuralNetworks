@@ -51,7 +51,7 @@ def save_confusion_matrix(matrix, filename='confusion_matrix_dual.png'):
     # ax.set_xticks([])
     # ax.set_yticks([])
 
-    tick_labels = ['0'] * n
+    tick_labels = [f"$0_{{{i+1}}}$" for i in range(n)]
     ax.set_xticks(np.arange(n))
     ax.set_yticks(np.arange(n))
     ax.set_xticklabels(tick_labels, fontsize=25)
@@ -124,7 +124,7 @@ def save_confusion_matrix(matrix, filename='confusion_matrix_dual.png'):
     # plt.xlabel('Etykieta osi X')
     # plt.ylabel('Etykieta osi Y')
     plt.tight_layout()
-    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.savefig(filename, dpi=50, bbox_inches='tight')
     plt.close()
     print(f"Macierz zapisana do {filename}")
 
